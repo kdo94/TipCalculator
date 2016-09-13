@@ -19,10 +19,8 @@
         android:ems="10"
         android:id="@+id/amountEditText"
         android:layout_columnSpan="2"
-        android:layout_row="0"
         android:layout_column="0"
-        android:text="@string/edit_amount"
-        android:layout_columnWeight="2" />
+        android:layout_row="0" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -30,15 +28,13 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:id="@+id/amountTextView"
         android:layout_column="0"
-        android:layout_row="0"
         android:layout_columnSpan="2"
-        android:layout_gravity="fill_horizontal"
-        android:background="#bbdefb"
+        android:layout_row="0"
+        android:elevation="5dp"
         android:hint="@string/edit_amount"
         android:padding="12dp"
-        android:elevation="5dp"
-        android:elegantTextHeight="false"
-        android:layout_columnWeight="1" />
+        android:background="#bbdefb"
+        android:layout_gravity="fill_horizontal" />
 
     <TextView
         android:layout_width="wrap_content"

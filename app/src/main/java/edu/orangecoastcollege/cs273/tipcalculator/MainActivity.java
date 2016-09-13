@@ -48,6 +48,9 @@ public class MainActivity extends AppCompatActivity {
 
         // Define a listener for the percentSeekBar( onProgressChanged )
         percentSeekBar.setOnSeekBarChangeListener(percentChangeListener);
+
+        currentBill.setTipPercent(0.15);
+        updateViews();
     }
 
     private TextWatcher amountTextChangedListener = new TextWatcher() {
@@ -104,6 +107,7 @@ public class MainActivity extends AppCompatActivity {
         // 3) set the total amount ( totalTextView )
         tipTextView.setText(currency.format(currentBill.getTipAmount()));
         totalTextView.setText(currency.format(currentBill.getTotalAmount()));
+        taxTextView.setText(currency.format(currentBill.getTaxAmount()));
     }
 
 }
