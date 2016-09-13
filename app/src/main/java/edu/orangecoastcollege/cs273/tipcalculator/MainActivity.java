@@ -63,8 +63,12 @@ public class MainActivity extends AppCompatActivity {
         public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
             // Try to get the amount from amountEditText
             try{
-                double amount = Double.parseDouble(charSequence.toString()) / 100.0;
-                currentBill.setAmount(amount);
+                if(charSequence.toString().isEmpty())
+                    currentBill.setAmount(0.0);
+                else {
+                    double amount = Double.parseDouble(charSequence.toString()) / 100.0;
+                    currentBill.setAmount(amount);
+                }
             }
             catch (NumberFormatException e){
                 amountEditText.setText("");
