@@ -21,7 +21,8 @@
         android:layout_columnSpan="2"
         android:layout_row="0"
         android:layout_column="0"
-        android:text="@string/edit_amount" />
+        android:text="@string/edit_amount"
+        android:layout_columnWeight="2" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -36,7 +37,8 @@
         android:hint="@string/edit_amount"
         android:padding="12dp"
         android:elevation="5dp"
-        android:elegantTextHeight="false" />
+        android:elegantTextHeight="false"
+        android:layout_columnWeight="1" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -45,7 +47,7 @@
         android:id="@+id/percentTextView"
         android:layout_column="0"
         android:layout_row="1"
-        android:text="Text" />
+        android:text="15%" />
 
     <SeekBar
         android:layout_width="wrap_content"
@@ -74,7 +76,6 @@
         android:id="@+id/tipTextView"
         android:layout_column="1"
         android:layout_row="2"
-        android:text="text"
         android:background="#ffe0b2"
         android:layout_gravity="fill_horizontal"
         android:padding="5dp"
@@ -93,7 +94,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Medium Text"
         android:id="@+id/taxTextView"
         android:layout_row="3"
         android:layout_column="1"
@@ -115,7 +115,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Medium Text"
         android:id="@+id/totalTextView"
         android:layout_column="1"
         android:layout_row="4"
